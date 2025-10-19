@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+}
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* espace entre avatar et GitHub */
+}
+
+.github-link img {
+  width: 3.5rem; /* taille de l’icône */
+  height: 3.5rem;
+}
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background: url("images/fonddev.jpg");
+  background-size: cover;
+  background-position: center; /* centre l’image */
+}
+.header-nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between; /* liens à gauche, image à droite */
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 0.0625rem solid #ddd;
+  position: fixed; /* la navbar reste visible en haut */
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* léger fond transparent */
+}
+.header-links {
+  list-style: none;
+  display: flex;
+  gap: 4rem; /* espace entre les liens */
+  transition: color 0.01875rem ease;
+}
+.header-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+.header-links a:hover {
+  color: #007bff; /* couleur au survol */
+}
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+.btn-header {
+  background-color: #f1f1f1;
+  color: #000;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+}
+.btn-header:hover {
+  background-color: #ddd;
+}
+.profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
+  align-items: center; /* centre horizontalement */
+  text-align: center;
+  padding-top: 20vh;
+  gap: 5rem;
+  font-family: "Poppins", sans-serif;
+}
+.nom {
+  font-size: 5rem;
+  color: #f1f1f1;
+  text-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.8),
+    0 0 0.625rem rgba(255, 255, 255, 0.3);
+}
+.titre {
+  font-size: 4.5rem;
+  color: #f1f1f1;
+  text-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.8),
+    0 0 0.625rem rgba(255, 255, 255, 0.3);
+}
+/*************bloc 2********************/
+#about {
+  width: 100%;
+  padding-bottom: 0.93125rem;
+}
+.aboutMe {
+  display: flex;
+  justify-content: center; /* centre horizontalement l'ensemble */
+  gap: 3rem; /* espace entre image et texte */
+  margin-top: 2.3rem;
+}
+.aboutPicture {
+  max-width: 50%;
+}
+.aboutMe p {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  max-width: 40%;
+}
+.titre-about {
+  margin-top: 2.3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+/**************bloc 3************/
+#situation {
+  width: 100%;
+  height: 40vh;
+  background: url("images/serveur.jpg");
+  background-size: cover;
+  background-position: center; /* centre l’image */
+  padding: 4rem 5%;
+  text-align: center;
+}
+#situation h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.9375rem;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+#situation p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  max-width: 50rem;
+  margin: 0 auto;
+  color: #ffffff;
+}
+/*bloc 4*/
+#projets-section {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 3.125rem 1.25rem;
+}
+.projets-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+.projets-container {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap; /* permet de passer sur une nouvelle ligne si écran petit */
+  justify-content: center;
+}
+.projet-card {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 18.75rem;
+  transition: transform 0.01875rem;
+}
+.projet-card:hover {
+  transform: translateY(-0.3125rem);
+}
+.projet-image img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+.projet-content {
+  padding: 1.25rem;
+  text-align: center;
+}
+.projet-content h3 {
+  margin: 0 0 0.625rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+.projet-content p {
+  font-size: 0.59375rem;
+  color: #666;
+}
+/************* blo 4 ******************************/
+#competences {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 3.75rem 1.25rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.competences-title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+.competences-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+}
+.competence-card {
+  background: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  width: 11.25rem;
+  padding: 1.25rem;
+}
+.competence-card:hover {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+.competence-card img {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 0.9375rem;
+}
+.competence-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.625rem;
+  color: #007bff;
+}
+.competence-card p {
+  font-size: 0.5625rem;
+  color: #555;
+}
+/******************bloc5************/
+#contact {
+  font-family: Arial, sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+input,
+textarea,
+button {
+  padding: 0.4375rem;
+  font-size: 1rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.375rem;
+}
+textarea {
+  resize: vertical;
+  min-height: 6.25rem;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.03125rem;
+}
+button:hover {
+  background-color: #0056b3;
+}
+/*********** footer  ***/
+#footer {
+  background-color: #111; /* fond sombre */
+  color: #fff; /* texte blanc */
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .header-links.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .header-links li a {
+    padding: 0.8rem 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+  }
+
+  .header-links li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .header-nav {
+    position: relative;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
