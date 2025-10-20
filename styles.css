@@ -32,7 +32,6 @@ body {
   border-bottom: 0.0625rem solid #ddd;
   position: fixed; /* la navbar reste visible en haut */
   top: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* léger fond transparent */
 }
 .header-links {
   list-style: none;
@@ -193,7 +192,7 @@ body {
   color: #333;
 }
 .projet-content p {
-  font-size: 0.59375rem;
+  font-size: 0.99375rem;
   color: #666;
 }
 /************* blo 4 ******************************/
@@ -236,7 +235,7 @@ body {
   color: #007bff;
 }
 .competence-card p {
-  font-size: 0.5625rem;
+  font-size: 0.7625rem;
   color: #555;
 }
 /******************bloc5************/
@@ -340,10 +339,6 @@ button:hover {
     border: none;
     color: #fff;
     cursor: pointer;
-  }
-
-  .header-nav {
-    position: relative;
   }
 }
 @media screen and (max-width: 480px) {
