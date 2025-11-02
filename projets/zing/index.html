@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu Zing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Jeu Zing</h1>
+
+    <div id="zone-jeu">
+      <div id="zone-joueur2" class="zone">
+        <h2>Joueur 2</h2>
+        <div id="main-joueur2" class="main"></div>
+        <p>Points : <span id="points2">0</span></p>
+      </div>
+
+      <div id="zone-table">
+        <h2>Table</h2>
+        <div id="table" class="table"></div>
+      </div>
+
+      <div id="zone-joueur1" class="zone">
+        <h2>Joueur 1</h2>
+        <div id="main-joueur1" class="main"></div>
+        <p>Points : <span id="points1">0</span></p>
+      </div>
+
+      <div id="fin-partie"></div>
+    </div>
+
+    <!-- Bouton règles -->
+    <button id="btn-regles">Règles du jeu</button>
+
+    <!-- Fenêtre modale des règles -->
+    <div id="modal-regles">
+      <div id="modal-content">
+        <h2>Règles du Jeu Zing</h2>
+        <ul>
+          <li>Chaque joueur reçoit 4 cartes.</li>
+          <li>Sur la table, 4 cartes sont posées.</li>
+          <li>
+            Pour prendre les cartes sur la table, il faut avoir la même valeur
+            que la dernière carte posée (celle tout à droite) sur la table, peu
+            importe la couleur(coeur, carreau, trefle ou pique).
+          </li>
+          <li>
+            Le valet prend toute la pile peu importe la valeur de la carte sur
+            la table
+          </li>
+          <li>
+            Si une seule carte est sur la table et que vous faites correspondre
+            sa valeur, cela s'appelle un Zing et fait
+            <strong>10 points</strong>.
+          </li>
+          <li>
+            Si vous jouez un valet sur un valet (Zing spécial), cela fait
+            <strong>25 points</strong>.
+          </li>
+          <li>
+            Calcul des points pour les cartes :<br />
+            - Toutes les cartes 10, valet, dame roi et as valent 1 point.<br />
+            - Le 10 de ♦ (carreau) vaut 2 points.<br />
+            - Le 2 de ♣ (trèfle) vaut 1 point.<br />
+            - Les autres cartes valent 0 point.
+          </li>
+          <li>La partie se termine quand toutes les cartes sont jouées.</li>
+        </ul>
+        <button id="close-modal">Fermer</button>
+      </div>
+    </div>
+
+    <!-- Footer / crédit -->
+    <footer id="footer">Développé par Denis Diglisic</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
